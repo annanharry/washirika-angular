@@ -7,11 +7,15 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
+import { HomeComponent } from './pages/home/home.component';
+import { LoginComponent } from './pages/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    HomeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
