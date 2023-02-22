@@ -1,0 +1,15 @@
+mat-toolbar {
+    justify-content: space-between;
+}
+
+.toolbar-color {
+    background-color: #439bde;
+}
+
+.menu-icon {
+    color: black;
+}
+
+.toolbar-spacer {
+    flex: 1 1 auto;
+}
