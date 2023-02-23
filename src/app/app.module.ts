@@ -8,6 +8,8 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
@@ -26,6 +28,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
     BrowserAnimationsModule
   ],
   providers: [],
