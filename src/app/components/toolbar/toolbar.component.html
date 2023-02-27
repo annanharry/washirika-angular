@@ -1,11 +1,20 @@
 <mat-toolbar color="primary">
+    
     <button mat-icon-button class="toolbar-menu" aria-label="Menu icon">
         <mat-icon>menu</mat-icon>
     </button>
     <span>Washirika Investment</span>
     <span class="toolbar-spacer"></span>
-    <button mat-button class="toolbar-login" aria-label="Icon to login" routerLink="login">
-        Login
-        <mat-icon>login</mat-icon>
-    </button>
+    <ng-template #loginButton>
+        <button mat-button class="toolbar-login" aria-label="Icon to login" routerLink="login">
+            Login
+            <mat-icon>login</mat-icon>
+        </button>
+    </ng-template>
+    <ng-container *ngIf="authService.currentUser$ | async as user; else loginButton">
+        <button mat-button (click)="logout()">
+            Logout
+            <mat-icon>login</mat-icon>
+        </button>
+    </ng-container>
 </mat-toolbar>
