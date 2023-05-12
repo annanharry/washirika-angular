@@ -38,7 +38,7 @@ export class LoginComponent {
     const { email, password } = this.loginForm.value;
     this.authService.login( email!, password!).pipe(
       this.toast.observe({
-        success: 'Logged in successfully',
+        // success: 'Logged in successfully',
         loading: 'Logging in ...',
         error: 'There was an error'
       })
