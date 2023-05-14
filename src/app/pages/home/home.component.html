@@ -1,4 +1,10 @@
 <mat-grid-list cols="4" rowHeight="100px">
     <mat-grid-tile [colspan]="4"> Welcome to Washirika </mat-grid-tile>
-    <mat-grid-tile [colspan]="4"> Search </mat-grid-tile>
+    <mat-grid-tile [colspan]="4">
+        <mat-form-field>
+            <mat-label> Search for member </mat-label>
+            <input matInput type="text">
+            <mat-icon matPrefix>search</mat-icon>
+        </mat-form-field>
+    </mat-grid-tile>
 </mat-grid-list>
